@@ -18,7 +18,7 @@ public class PainelAdm extends javax.swing.JFrame {
      */
     public PainelAdm() {
         initComponents();
-   
+        setTitle("Painel do Administrador");
         //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
@@ -33,6 +33,15 @@ public class PainelAdm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jPanelInternal = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jButtonCadUsuarios = new javax.swing.JButton();
+        jButtonCadFilmes = new javax.swing.JButton();
+        jButtonListarEmprestimos = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabelPainelFundo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabelFundoPainelAdm = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuFilme = new javax.swing.JMenu();
@@ -53,9 +62,51 @@ public class PainelAdm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        jInternalFrame1.setTitle("Bem Vindo!");
+        jInternalFrame1.setVisible(true);
+        jInternalFrame1.getContentPane().setLayout(null);
+
+        jPanelInternal.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelInternal.setLayout(null);
+
+        jLabel2.setText("Cadastros:");
+        jPanelInternal.add(jLabel2);
+        jLabel2.setBounds(20, 0, 80, 20);
+
+        jButtonCadUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cadUsuarios.png"))); // NOI18N
+        jPanelInternal.add(jButtonCadUsuarios);
+        jButtonCadUsuarios.setBounds(130, 20, 100, 70);
+
+        jButtonCadFilmes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cadFilmes1.png"))); // NOI18N
+        jPanelInternal.add(jButtonCadFilmes);
+        jButtonCadFilmes.setBounds(20, 20, 100, 70);
+
+        jButtonListarEmprestimos.setText("Empréstimos");
+        jPanelInternal.add(jButtonListarEmprestimos);
+        jButtonListarEmprestimos.setBounds(30, 170, 130, 50);
+
+        jLabel3.setText("Visualizar:");
+        jPanelInternal.add(jLabel3);
+        jLabel3.setBounds(30, 150, 70, 16);
+
+        jLabelPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/internalframe.png"))); // NOI18N
+        jPanelInternal.add(jLabelPainelFundo);
+        jLabelPainelFundo.setBounds(-290, -10, 830, 250);
+
+        jInternalFrame1.getContentPane().add(jPanelInternal);
+        jPanelInternal.setBounds(-10, 40, 530, 240);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("SISTEMA DE LOCAÇÃO DE FILMES");
+        jInternalFrame1.getContentPane().add(jLabel1);
+        jLabel1.setBounds(70, 0, 430, 30);
+
+        getContentPane().add(jInternalFrame1);
+        jInternalFrame1.setBounds(240, 120, 530, 310);
+
         jLabelFundoPainelAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundoPainelAdm.jpg"))); // NOI18N
         getContentPane().add(jLabelFundoPainelAdm);
-        jLabelFundoPainelAdm.setBounds(-50, 0, 960, 960);
+        jLabelFundoPainelAdm.setBounds(-50, 0, 1030, 960);
 
         jMenuFilme.setText("Filmes");
 
@@ -120,7 +171,7 @@ public class PainelAdm extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(930, 810));
+        setSize(new java.awt.Dimension(987, 662));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -172,7 +223,15 @@ public class PainelAdm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCadFilmes;
+    private javax.swing.JButton jButtonCadUsuarios;
+    private javax.swing.JButton jButtonListarEmprestimos;
+    private javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelFundoPainelAdm;
+    private javax.swing.JLabel jLabelPainelFundo;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuConfiguracoes;
@@ -188,5 +247,6 @@ public class PainelAdm extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemUsuarioAlter;
     private javax.swing.JMenuItem jMenuItemUsuarioCad;
     private javax.swing.JMenu jMenuUsuario;
+    private javax.swing.JPanel jPanelInternal;
     // End of variables declaration//GEN-END:variables
 }
