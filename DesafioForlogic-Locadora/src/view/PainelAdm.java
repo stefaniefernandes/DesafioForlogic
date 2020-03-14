@@ -33,7 +33,7 @@ public class PainelAdm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jInternalFrameBemVindo = new javax.swing.JInternalFrame();
         jPanelInternal = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButtonCadUsuarios = new javax.swing.JButton();
@@ -42,6 +42,7 @@ public class PainelAdm extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabelPainelFundo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jButtonFecharBemVindo = new javax.swing.JButton();
         jLabelFundoPainelAdm = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuFilme = new javax.swing.JMenu();
@@ -58,13 +59,15 @@ public class PainelAdm extends javax.swing.JFrame {
         jMenuConfiguracoes = new javax.swing.JMenu();
         jMenuItemTelaBemVindo = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenuSair = new javax.swing.JMenu();
+        jMenuItemSair = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jInternalFrame1.setTitle("Bem Vindo!");
-        jInternalFrame1.setVisible(true);
-        jInternalFrame1.getContentPane().setLayout(null);
+        jInternalFrameBemVindo.setTitle("Bem Vindo!");
+        jInternalFrameBemVindo.setVisible(true);
+        jInternalFrameBemVindo.getContentPane().setLayout(null);
 
         jPanelInternal.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelInternal.setLayout(null);
@@ -74,35 +77,48 @@ public class PainelAdm extends javax.swing.JFrame {
         jLabel2.setBounds(20, 0, 80, 20);
 
         jButtonCadUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cadUsuarios.png"))); // NOI18N
+        jButtonCadUsuarios.setToolTipText("Usuários");
         jPanelInternal.add(jButtonCadUsuarios);
         jButtonCadUsuarios.setBounds(130, 20, 100, 70);
 
-        jButtonCadFilmes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cadFilmes1.png"))); // NOI18N
+        jButtonCadFilmes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cadFilmes1_1.png"))); // NOI18N
+        jButtonCadFilmes.setToolTipText("Filmes");
         jPanelInternal.add(jButtonCadFilmes);
         jButtonCadFilmes.setBounds(20, 20, 100, 70);
 
         jButtonListarEmprestimos.setText("Empréstimos");
+        jButtonListarEmprestimos.setToolTipText("Empréstimos de filmes");
         jPanelInternal.add(jButtonListarEmprestimos);
-        jButtonListarEmprestimos.setBounds(30, 170, 130, 50);
+        jButtonListarEmprestimos.setBounds(20, 160, 110, 60);
 
         jLabel3.setText("Visualizar:");
         jPanelInternal.add(jLabel3);
-        jLabel3.setBounds(30, 150, 70, 16);
+        jLabel3.setBounds(30, 140, 70, 16);
 
         jLabelPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/internalframe.png"))); // NOI18N
         jPanelInternal.add(jLabelPainelFundo);
-        jLabelPainelFundo.setBounds(-290, -10, 830, 250);
+        jLabelPainelFundo.setBounds(-200, -10, 730, 250);
 
-        jInternalFrame1.getContentPane().add(jPanelInternal);
+        jInternalFrameBemVindo.getContentPane().add(jPanelInternal);
         jPanelInternal.setBounds(-10, 40, 530, 240);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("SISTEMA DE LOCAÇÃO DE FILMES");
-        jInternalFrame1.getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 0, 430, 30);
+        jInternalFrameBemVindo.getContentPane().add(jLabel1);
+        jLabel1.setBounds(50, 0, 430, 30);
 
-        getContentPane().add(jInternalFrame1);
-        jInternalFrame1.setBounds(240, 120, 530, 310);
+        jButtonFecharBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png"))); // NOI18N
+        jButtonFecharBemVindo.setToolTipText("Fechar tela bem vindo");
+        jButtonFecharBemVindo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonFecharBemVindoActionPerformed(evt);
+            }
+        });
+        jInternalFrameBemVindo.getContentPane().add(jButtonFecharBemVindo);
+        jButtonFecharBemVindo.setBounds(460, 0, 50, 40);
+
+        getContentPane().add(jInternalFrameBemVindo);
+        jInternalFrameBemVindo.setBounds(240, 120, 530, 310);
 
         jLabelFundoPainelAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundoPainelAdm.jpg"))); // NOI18N
         getContentPane().add(jLabelFundoPainelAdm);
@@ -162,12 +178,29 @@ public class PainelAdm extends javax.swing.JFrame {
         jMenuConfiguracoes.setText("Configurações");
 
         jMenuItemTelaBemVindo.setText("Tela Bem-Vindo");
+        jMenuItemTelaBemVindo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemTelaBemVindoActionPerformed(evt);
+            }
+        });
         jMenuConfiguracoes.add(jMenuItemTelaBemVindo);
 
         jMenuBar1.add(jMenuConfiguracoes);
 
         jMenu6.setText("Ajuda");
         jMenuBar1.add(jMenu6);
+
+        jMenuSair.setText("Sair");
+
+        jMenuItemSair.setText("Sair");
+        jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSairActionPerformed(evt);
+            }
+        });
+        jMenuSair.add(jMenuItemSair);
+
+        jMenuBar1.add(jMenuSair);
 
         setJMenuBar(jMenuBar1);
 
@@ -186,6 +219,20 @@ public class PainelAdm extends javax.swing.JFrame {
     private void jMenuItemUsuarioCadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemUsuarioCadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItemUsuarioCadActionPerformed
+
+    private void jButtonFecharBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFecharBemVindoActionPerformed
+       jInternalFrameBemVindo.dispose();
+    }//GEN-LAST:event_jButtonFecharBemVindoActionPerformed
+
+    private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItemSairActionPerformed
+
+    private void jMenuItemTelaBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTelaBemVindoActionPerformed
+        PainelAdm tela = new PainelAdm();
+        tela.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jMenuItemTelaBemVindoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,8 +272,9 @@ public class PainelAdm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCadFilmes;
     private javax.swing.JButton jButtonCadUsuarios;
+    private javax.swing.JButton jButtonFecharBemVindo;
     private javax.swing.JButton jButtonListarEmprestimos;
-    private javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JInternalFrame jInternalFrameBemVindo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -243,9 +291,11 @@ public class PainelAdm extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemFilmeListar;
     private javax.swing.JMenuItem jMenuItemGeneroAlter;
     private javax.swing.JMenuItem jMenuItemGeneroCad;
+    private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenuItem jMenuItemTelaBemVindo;
     private javax.swing.JMenuItem jMenuItemUsuarioAlter;
     private javax.swing.JMenuItem jMenuItemUsuarioCad;
+    private javax.swing.JMenu jMenuSair;
     private javax.swing.JMenu jMenuUsuario;
     private javax.swing.JPanel jPanelInternal;
     // End of variables declaration//GEN-END:variables

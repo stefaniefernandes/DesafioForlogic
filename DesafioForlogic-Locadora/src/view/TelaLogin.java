@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Stefanie
@@ -17,7 +19,7 @@ public class TelaLogin extends javax.swing.JFrame {
     public TelaLogin() {
         initComponents();
         setResizable(false);
-        setTitle("Login");
+        setTitle("Login - Locadora Forlogic");
         
     }
 
@@ -63,6 +65,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jButtonSair.setText("Sair");
         jButtonSair.setMaximumSize(new java.awt.Dimension(77, 25));
         jButtonSair.setMinimumSize(new java.awt.Dimension(77, 25));
+        jButtonSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSairActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButtonSair);
         jButtonSair.setBounds(350, 280, 55, 25);
         getContentPane().add(jTextFieldUsuario);
@@ -86,10 +93,18 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonAcessarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAcessarActionPerformed
-        PainelAdm tela = new PainelAdm();
-        tela.setVisible(true);
-        dispose();
+        if(jTextFieldUsuario.getText().equals("admin")&&jPasswordFieldSenha.getText().equals("admin")){
+            PainelAdm tela = new PainelAdm();
+            tela.setVisible(true);
+            dispose();
+        }else{
+            JOptionPane.showMessageDialog(rootPane, "Senha ou usuário incorretos");
+        }
     }//GEN-LAST:event_jButtonAcessarActionPerformed
+
+    private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButtonSairActionPerformed
 
     /**
      * @param args the command line arguments
