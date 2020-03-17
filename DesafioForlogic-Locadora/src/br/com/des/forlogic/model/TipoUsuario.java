@@ -12,7 +12,7 @@ package br.com.des.forlogic.model;
 public enum TipoUsuario {
     
 	ADMIN(1, "Usuário Administrador"),
-	CUSTOMER(2, "Usuário da loja"); 
+	CUSTOMER(2, "Usuário Cliente"); 
 	
 	private int codigo;
 	private String descricao;

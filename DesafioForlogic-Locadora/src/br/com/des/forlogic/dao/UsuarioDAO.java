@@ -5,7 +5,8 @@
  */
 package br.com.des.forlogic.dao;
 
-import br.com.des.forlogic.model.Genero;
+
+import br.com.des.forlogic.model.Usuario;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,21 +16,19 @@ import javax.persistence.Persistence;
  *
  * @author Stefanie
  */
-public class GeneroDAO {
-    
-    
-     private static GeneroDAO instance;
+public class UsuarioDAO {
+       private static UsuarioDAO instance;
        protected EntityManager entityManager;
         
-       public static GeneroDAO getInstance(){
+       public static UsuarioDAO getInstance(){
          if (instance == null){
-            instance = new GeneroDAO();
+            instance = new UsuarioDAO();
          }
           
          return instance;
        }
  
-       private GeneroDAO() {
+       private UsuarioDAO() {
          entityManager = getEntityManager();
        }
  
@@ -43,20 +42,19 @@ public class GeneroDAO {
         return entityManager;
        }
  
-       public Genero getById(final int id) {
-         return entityManager.find(Genero.class, id);
+       public Usuario getById(final int id) {
+         return entityManager.find(Usuario.class, id);
        }
  
        @SuppressWarnings("unchecked")
-       public List<Genero> findAll() {
+       public List<Usuario> findAll() {
          return entityManager.createQuery("FROM " + 
-         Genero.class.getName()).getResultList();
+         Usuario.class.getName()).getResultList();
        }
- 
-       public void persist(Genero genero) {
+       public void persist(Usuario usuario) {
          try {
             entityManager.getTransaction().begin();
-            entityManager.persist(genero);
+            entityManager.persist(usuario);
             entityManager.getTransaction().commit();
          } catch (Exception ex) {
             ex.printStackTrace();
@@ -64,10 +62,10 @@ public class GeneroDAO {
          }
        }
  
-       public void merge(Genero genero) {
+       public void merge(Usuario usuario) {
          try {
             entityManager.getTransaction().begin();
-            entityManager.merge(genero);
+            entityManager.merge(usuario);
             entityManager.getTransaction().commit();
          } catch (Exception ex) {
             ex.printStackTrace();
@@ -75,11 +73,11 @@ public class GeneroDAO {
          }
        }
  
-       public void remove(Genero genero) {
+          public void remove(Usuario usuario) {
          try {
             entityManager.getTransaction().begin();
-            genero = entityManager.find(Genero.class, genero.getId());
-            entityManager.remove(genero);
+            usuario = entityManager.find(Usuario.class, usuario.getId());
+            entityManager.remove(usuario);
             entityManager.getTransaction().commit();
          } catch (Exception ex) {
             ex.printStackTrace();
@@ -89,10 +87,11 @@ public class GeneroDAO {
  
        public void removeById(final int id) {
          try {
-            Genero genero = getById(id);
-            remove(genero);
+            Usuario usuario = getById(id);
+            remove(usuario);
          } catch (Exception ex) {
             ex.printStackTrace();
          }
        }
+    
 }

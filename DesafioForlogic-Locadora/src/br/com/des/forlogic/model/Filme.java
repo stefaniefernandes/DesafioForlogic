@@ -27,30 +27,18 @@ public class Filme implements Serializable {
     private String nome;
     private String sinopse;
     private Integer duracao;
-<<<<<<< HEAD
-    private String genero;
-=======
-    
     private Genero genero;
->>>>>>> master
 
     public Filme(){
 
     }
     
-<<<<<<< HEAD
-    public Filme(Integer id, String nome, String sinopse, Integer duracao, String genero) {
-=======
-    public Filme(Integer id, String nome, String sinopse, Integer duracao) {
->>>>>>> master
+    public Filme(Integer id, String nome, String sinopse, Integer duracao, Genero genero) {
         this.id = id;
         this.nome = nome;
         this.sinopse = sinopse;
         this.duracao = duracao;
-<<<<<<< HEAD
         this.genero = genero;
-=======
->>>>>>> master
     }
 
     public Integer getId() {
@@ -85,19 +73,11 @@ public class Filme implements Serializable {
         this.duracao = duracao;
     }
     
-<<<<<<< HEAD
-     public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-=======
-    public Genero getGenero() {
+     public Genero getGenero() {
         return genero;
     }
 
     public void setGenero(Genero genero) {
->>>>>>> master
         this.genero = genero;
     }
 }

@@ -5,7 +5,9 @@
  */
 package br.com.des.forlogic.model;
 
+
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  *
@@ -19,6 +21,7 @@ public class Usuario implements Serializable {
     private String nome;
     private String cpf;
     private String endereco;
+    private Date datanasc;
     private int tipoUsuario;
 
     public Integer getId() {
@@ -59,6 +62,14 @@ public class Usuario implements Serializable {
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario.getCodigo();
+    }
+    
+        public Date getdataNasc() {
+        return datanasc;
+    }
+
+    public void setdataNasc(Date dataNasc) {
+        this.datanasc = dataNasc;
     }
     
 }
