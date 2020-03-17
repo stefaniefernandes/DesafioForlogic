@@ -25,6 +25,7 @@ public class PainelAdm extends javax.swing.JFrame {
         initComponents();
         setTitle("Painel do Administrador");
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+         setResizable(false);
         conecta.conexao();
     }
 
