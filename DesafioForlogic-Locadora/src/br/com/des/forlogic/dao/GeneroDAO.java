@@ -17,7 +17,10 @@ import javax.persistence.Persistence;
  */
 public class GeneroDAO {
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> master
      private static GeneroDAO instance;
        protected EntityManager entityManager;
         

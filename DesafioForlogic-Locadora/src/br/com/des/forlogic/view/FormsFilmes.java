@@ -5,11 +5,14 @@
  */
 package br.com.des.forlogic.view;
 
+<<<<<<< HEAD
 import br.com.des.forlogic.dao.FilmeDAO;
 import br.com.des.forlogic.model.Filme;
 import br.com.des.forlogic.model.Genero;
 import javax.swing.JOptionPane;
 
+=======
+>>>>>>> master
 /**
  *
  * @author Stefanie
@@ -37,9 +40,18 @@ public class FormsFilmes extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jTextFieldNomeFilme = new javax.swing.JTextField();
         jComboBoxGenero = new javax.swing.JComboBox<>();
         jTextFieldDuracaoFilme = new javax.swing.JTextField();
+=======
+        jLabel6 = new javax.swing.JLabel();
+        jTextFieldNomeFilme = new javax.swing.JTextField();
+        jComboBoxGenero = new javax.swing.JComboBox<>();
+        jTextFieldDuracaoFilme = new javax.swing.JTextField();
+        jTextFieldDataLanc = new javax.swing.JTextField();
+        jTextFieldProdFilme = new javax.swing.JTextField();
+>>>>>>> master
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButtonNovo = new javax.swing.JButton();
@@ -47,10 +59,13 @@ public class FormsFilmes extends javax.swing.JFrame {
         jButtonCancelar = new javax.swing.JButton();
         jButtonEditar = new javax.swing.JButton();
         jButtonExcluir = new javax.swing.JButton();
+<<<<<<< HEAD
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextAreaSinopse = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
         jTextFieldIdFilme = new javax.swing.JTextField();
+=======
+>>>>>>> master
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -62,10 +77,19 @@ public class FormsFilmes extends javax.swing.JFrame {
 
         jLabel3.setText("Duração:");
 
+<<<<<<< HEAD
         jLabel4.setText("Sinopse:");
 
         jLabel5.setText("Genêro:");
 
+=======
+        jLabel4.setText("Data de lançamento:");
+
+        jLabel5.setText("Genêro:");
+
+        jLabel6.setText("Produtora:");
+
+>>>>>>> master
         jTextFieldNomeFilme.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldNomeFilmeActionPerformed(evt);
@@ -95,11 +119,14 @@ public class FormsFilmes extends javax.swing.JFrame {
         jButtonNovo.setText("Novo");
 
         jButtonSalvar.setText("Salvar");
+<<<<<<< HEAD
         jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalvarActionPerformed(evt);
             }
         });
+=======
+>>>>>>> master
 
         jButtonCancelar.setText("Cancelar");
 
@@ -111,6 +138,7 @@ public class FormsFilmes extends javax.swing.JFrame {
         });
 
         jButtonExcluir.setText("Excluir");
+<<<<<<< HEAD
         jButtonExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonExcluirActionPerformed(evt);
@@ -122,11 +150,14 @@ public class FormsFilmes extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextAreaSinopse);
 
         jLabel6.setText("ID:");
+=======
+>>>>>>> master
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(186, Short.MAX_VALUE)
                 .addComponent(jButtonNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -162,10 +193,56 @@ public class FormsFilmes extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldDuracaoFilme)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(7, 7, 7)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextFieldNomeFilme, javax.swing.GroupLayout.DEFAULT_SIZE, 272, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldDuracaoFilme)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextFieldDataLanc, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)))
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextFieldProdFilme)
+                            .addComponent(jComboBoxGenero, 0, 263, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButtonNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonSalvar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonCancelar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonEditar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonExcluir)
+                        .addGap(141, 141, 141))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(95, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61))
+>>>>>>> master
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
@@ -190,6 +267,27 @@ public class FormsFilmes extends javax.swing.JFrame {
                 .addGap(96, 96, 96)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+=======
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel5)
+                    .addComponent(jTextFieldNomeFilme, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldDuracaoFilme, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jTextFieldProdFilme, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextFieldDataLanc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(77, 77, 77)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+>>>>>>> master
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonNovo)
                     .addComponent(jButtonSalvar)
@@ -222,7 +320,11 @@ public class FormsFilmes extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addContainerGap(18, Short.MAX_VALUE))
+=======
+                .addContainerGap(22, Short.MAX_VALUE))
+>>>>>>> master
         );
 
         setSize(new java.awt.Dimension(803, 580));
@@ -241,6 +343,7 @@ public class FormsFilmes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonEditarActionPerformed
 
+<<<<<<< HEAD
     private void jButtonSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvarActionPerformed
     Filme filme = new Filme();
     //filme.setId(Integer.parseInt(jTextFieldIdFilme.getText()));
@@ -268,6 +371,8 @@ public class FormsFilmes extends javax.swing.JFrame {
 }
     
     
+=======
+>>>>>>> master
     /**
      * @param args the command line arguments
      */
@@ -318,11 +423,19 @@ public class FormsFilmes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+<<<<<<< HEAD
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextAreaSinopse;
     private javax.swing.JTextField jTextFieldDuracaoFilme;
     private javax.swing.JTextField jTextFieldIdFilme;
     private javax.swing.JTextField jTextFieldNomeFilme;
+=======
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextFieldDataLanc;
+    private javax.swing.JTextField jTextFieldDuracaoFilme;
+    private javax.swing.JTextField jTextFieldNomeFilme;
+    private javax.swing.JTextField jTextFieldProdFilme;
+>>>>>>> master
     // End of variables declaration//GEN-END:variables
 }
